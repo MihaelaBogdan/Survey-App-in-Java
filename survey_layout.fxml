@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="SurveyController">
+    <children>
+        <Label text="Sondaj de opinie" styleClass="header-label" />
+
+        <TextField fx:id="nameField" promptText="Introdu numele tău" />
+
+        <Label text="Alege opțiunea preferată:" />
+
+        <RadioButton fx:id="option1" text="Opțiunea 1" toggleGroup="group" />
+        <RadioButton fx:id="option2" text="Opțiunea 2" toggleGroup="group" />
+        <RadioButton fx:id="option3" text="Opțiunea 3" toggleGroup="group" />
+
+        <CheckBox fx:id="agreeCheckBox" text="Sunt de acord cu termenii și condițiile" />
+
+        <Button text="Trimite" onAction="#submitSurvey" styleClass="submit-button" />
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>
